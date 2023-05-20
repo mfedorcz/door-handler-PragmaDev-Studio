@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<SdlFSMDiagram language="sdl" type="prcs" is_extract="FALSE" is_temporary="FALSE">
+<SdlFSMPartition name="" needs_cleanup="FALSE">
+<SdlFSMSymbol identifier="SYM4" type="sdlText" text="SYNTYPE Maintaince_Time = Integer
+default 5
+Constants 5..20
+ENDSYNTYPE;" outline_color="-" background_color="-" center_coordinates="190 186" dimensions="256 82" attached_symbol_id=""/>
+<NonStateTransition top_left_coordinates="415 139">
+<SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="550 154" dimensions="60 30" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM2" type="sdlState" text="IDLE" outline_color="-" background_color="-" center_coordinates="550 201" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NonStateTransition>
+<StateTransitionBlock top_left_coordinates="506 337">
+<SdlFSMSymbolReference identifier="SYM6"/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM7" type="sdlInputSig" text="T" outline_color="-" background_color="-" center_coordinates="550 409" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM8" type="sdlSendSig" text="s_Help" outline_color="-" background_color="-" center_coordinates="550 461" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM9" type="sdlResetTimer" text="RESET(T)" outline_color="-" background_color="-" center_coordinates="550 513" dimensions="88 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM10" type="sdlState" text="IDLE" outline_color="-" background_color="-" center_coordinates="550 565" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<StateTransitionBlock top_left_coordinates="412 181">
+<SdlFSMSymbolReference identifier="SYM2"/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM3" type="sdlInputSig" text="s_FailHelp" outline_color="-" background_color="-" center_coordinates="550 253" dimensions="90 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM5" type="sdlInitTimer" text="SET(NOW + any(Maintaince_Time), T)" outline_color="-" background_color="-" center_coordinates="550 305" dimensions="270 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM6" type="sdlState" text="MAINTANCE" outline_color="-" background_color="-" center_coordinates="550 357" dimensions="82 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.0" bottomMargin="1.0" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+</SdlFSMPartition>
+</SdlFSMDiagram>

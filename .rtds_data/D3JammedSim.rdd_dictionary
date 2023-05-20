@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="11340" language="sdl" diagramType="prcs">
+<Signal id="SIG1" name="s_DR3UnlockJam">
+<UsingSymbols>
+<SymbolReference symbolId="SYM3" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG2" name="DR3_FAIL">
+<UsingSymbols>
+<SymbolReference symbolId="SYM8" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG3" name="DR3_ACK">
+<UsingSymbols>
+<SymbolReference symbolId="SYM9" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG4" name="s_DR3Unlock">
+<UsingSymbols>
+<SymbolReference symbolId="SYM11" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Item id="ITEM1" type="process" name="D3JammedSim" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Body>
+<SentSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+</ReceivedSignals>
+</Body>
+</Item>
+<Item id="ITEM2" type="variable" name="any" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM5"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="type" name="Integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="0" columnNumber="18"/>
+</Item>
+<Item id="ITEM4" type="variable" name="Jamming" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM5"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM5" type="type" name="Jamming" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="TRUE" syntypeBaseTypeId="ITEM3">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="0,8"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM6" type="state" name="IDLE" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM2"/>
+<SymbolReference symbolId="SYM10"/>
+</UsingSymbols>
+</Item>
+</DictionaryObjects>
