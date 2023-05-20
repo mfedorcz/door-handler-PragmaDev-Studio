@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="_LIFELINE_1 LIFELINEID_1 _LIFELINE_0 LIFELINEID_2 LIFELINEID_3 LIFELINEID_4 LIFELINEID_5"/>
+<CollapsedLifeline identifier="_LIFELINE_0" collapsed_lifelines_ids="LIFELINEID_2 LIFELINEID_3"/>
+<CollapsedLifeline identifier="_LIFELINE_1" collapsed_lifelines_ids="LIFELINEID_1 _LIFELINE_0 LIFELINEID_4"/>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="PROCESS_START" color="-" text="SYS
+" text_size="29 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="PROCESS_START" color="-" text="D3JammedSim
+(1)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="PROCESS_START" color="-" text="PBHelper+PBackend" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="PROCESS_START" color="-" text="PBHelper
+(2)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="PROCESS_START" color="-" text="PBackend
+(3)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="PROCESS_START" color="-" text="PFrontend
+(4)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="PROCESS_START" color="-" text="ENV
+" text_size="29 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\d3jammedsim.rdd*SYM2" identifier="COND1" background="-" text="IDLE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE" identifier="COND1" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\d3jammedsim.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM2" identifier="COND2" background="-" text="IDLE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE" identifier="COND2" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM3" identifier="COND3" background="-" text="IDLE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE" identifier="COND3" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM2" identifier="COND4" background="-" text="IDLE_START"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE_START" identifier="COND4" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=1|})" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" text="s_Num(|{param1|=1|})" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Initialize" identifier="MSG2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="7"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM3" identifier="MSG2" text="s_Initialize"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="7"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM4" identifier="COND5" background="-" text="WAIT_DOOR_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="7"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_DOOR_NUM" identifier="COND5" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=1|})" identifier="MSG3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="8"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM5" identifier="MSG3" text="s_Num(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="8"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM21" identifier="MSG4" text="s_DoorNumPB(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="8"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM24" identifier="COND6" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="8"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND6" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM24"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM5" identifier="MSG4" text="s_DoorNumPB(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="8"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM10" identifier="COND7" background="-" text="DR1LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="8"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR1LOCK" identifier="COND7" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM10"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=1|})" identifier="MSG5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG5" text="s_Num(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG6" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG7" text="s_NumPB(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND8" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND8" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM14" identifier="MSG7" text="s_NumPB(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM24" identifier="MSG8" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM27" identifier="COND9" background="-" text="DR1LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR1LOCK" identifier="COND9" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM29" identifier="MSG8" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM32" identifier="MSG9" text="s_Go"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Go" identifier="MSG9"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47" identifier="COND10" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND10" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=2|})" identifier="MSG10"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG10" text="s_Num(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG11" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG12" text="s_NumPB(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND11" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND11" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM14" identifier="MSG12" text="s_NumPB(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM34" identifier="MSG13" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM35" identifier="COND12" background="-" text="DR1LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR1LOCK" identifier="COND12" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM35"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM29" identifier="MSG13" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM32" identifier="MSG14" text="s_Go"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Go" identifier="MSG14"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47" identifier="COND13" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="9"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND13" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=3|})" identifier="MSG15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG15" text="s_Num(|{param1|=3|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG16" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG17" text="s_NumPB(|{param1|=3|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND14" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND14" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM14" identifier="MSG17" text="s_NumPB(|{param1|=3|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM41" identifier="MSG18" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM45" identifier="MSG19" text="s_DR1Unlock"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_DR1Unlock" identifier="MSG19"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM42" identifier="COND15" background="-" text="IDLE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE" identifier="COND15" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM42"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM29" identifier="MSG18" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM32" identifier="MSG20" text="s_Go"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Go" identifier="MSG20"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM49" identifier="MSG21" text="s_Succes(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Succes(|{param1|=1|})" identifier="MSG21"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM46" identifier="COND16" background="-" text="WAIT_DOOR_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="11"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_DOOR_NUM" identifier="COND16" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM46"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=2|})" identifier="MSG22"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM5" identifier="MSG22" text="s_Num(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM21" identifier="MSG23" text="s_DoorNumPB(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM24" identifier="COND17" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND17" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM24"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM5" identifier="MSG23" text="s_DoorNumPB(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM11" identifier="COND18" background="-" text="DR2LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR2LOCK" identifier="COND18" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=4|})" identifier="MSG24"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG24" text="s_Num(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG25" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG25"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG26" text="s_NumPB(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND19" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND19" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM184" identifier="MSG26" text="s_NumPB(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM202" identifier="MSG27" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM203" identifier="COND20" background="-" text="DR2LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR2LOCK" identifier="COND20" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM203"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM29" identifier="MSG27" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM32" identifier="MSG28" text="s_Go"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Go" identifier="MSG28"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47" identifier="COND21" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND21" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=5|})" identifier="MSG29"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG29" text="s_Num(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG30" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG30"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG31" text="s_NumPB(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND22" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND22" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM184" identifier="MSG31" text="s_NumPB(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM188" identifier="MSG32" text="s_codeOutOfOrder"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM189" identifier="MSG33" text="s_FailHelp"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM190" identifier="COND23" background="-" text="WAIT_FOR_HELP"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_FOR_HELP" identifier="COND23" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM190"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM31" identifier="MSG32" text="s_codeOutOfOrder"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM36" identifier="MSG34" text="s_sysOffline"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_sysOffline" identifier="MSG34"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM37" identifier="COND24" background="-" text="OUT_OF_ORDER"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="OUT_OF_ORDER" identifier="COND24" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM37"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM3" identifier="MSG33" text="s_FailHelp"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(16)" type="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM6" identifier="COND25" background="-" text="MAINTANCE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="18"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="MAINTANCE" identifier="COND25" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM7"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM8" identifier="MSG35" text="s_Help"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM10" identifier="COND26" background="-" text="IDLE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE" identifier="COND26" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbhelper.rdd*SYM10"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM231" identifier="MSG35" text="s_Help"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM232" identifier="MSG36" text="s_Restored"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM233" identifier="COND27" background="-" text="DR3LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR3LOCK" identifier="COND27" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM233"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM39" identifier="MSG36" text="s_Restored"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM40" identifier="MSG37" text="s_sysOnline"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_sysOnline" identifier="MSG37"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM41" identifier="COND28" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="34"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND28" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM41"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=5|})" identifier="MSG38"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG38" text="s_Num(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG39" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG39"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG40" text="s_NumPB(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND29" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND29" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM224" identifier="MSG40" text="s_NumPB(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM252" identifier="MSG41" text="s_CodeFALSE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM253" identifier="COND30" background="-" text="IDLE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE" identifier="COND30" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM253"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM30" identifier="MSG41" text="s_CodeFALSE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM33" identifier="MSG42" text="s_Failed(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Failed(|{param1|=0|})" identifier="MSG42"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM35" identifier="COND31" background="-" text="BLOCKED"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="35"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="BLOCKED" identifier="COND31" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM35"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=6|})" identifier="MSG43"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="36"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" text="s_Num(|{param1|=6|})" identifier="MSG43"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="36"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="RST" identifier="MSG44"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM19" identifier="MSG44" text="RST"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM20" identifier="COND32" background="-" text="IDLE_START"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE_START" identifier="COND32" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM20"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Initialize" identifier="MSG45"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="41"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM3" identifier="MSG45" text="s_Initialize"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="41"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM4" identifier="COND33" background="-" text="WAIT_DOOR_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="41"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_DOOR_NUM" identifier="COND33" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=2|})" identifier="MSG46"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="44"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM5" identifier="MSG46" text="s_Num(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="44"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM21" identifier="MSG47" text="s_DoorNumPB(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="44"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM24" identifier="COND34" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="44"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND34" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM24"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM5" identifier="MSG47" text="s_DoorNumPB(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="44"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM11" identifier="COND35" background="-" text="DR2LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="44"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR2LOCK" identifier="COND35" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=4|})" identifier="MSG48"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG48" text="s_Num(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG49" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG49"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG50" text="s_NumPB(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND36" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND36" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM184" identifier="MSG50" text="s_NumPB(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM202" identifier="MSG51" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM203" identifier="COND37" background="-" text="DR2LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR2LOCK" identifier="COND37" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM203"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM29" identifier="MSG51" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM32" identifier="MSG52" text="s_Go"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Go" identifier="MSG52"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47" identifier="COND38" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="45"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND38" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=5|})" identifier="MSG53"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG53" text="s_Num(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG54" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG54"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG55" text="s_NumPB(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND39" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND39" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM184" identifier="MSG55" text="s_NumPB(|{param1|=5|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM210" identifier="MSG56" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM211" identifier="COND40" background="-" text="DR2LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR2LOCK" identifier="COND40" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM211"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM29" identifier="MSG56" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM32" identifier="MSG57" text="s_Go"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Go" identifier="MSG57"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47" identifier="COND41" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="46"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND41" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM47"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=6|})" identifier="MSG58"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG58" text="s_Num(|{param1|=6|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG59" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG59"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG60" text="s_NumPB(|{param1|=6|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND42" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND42" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM184" identifier="MSG60" text="s_NumPB(|{param1|=6|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM277" identifier="MSG61" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM263" identifier="MSG62" text="s_DR2Unlock"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_DR2Unlock" identifier="MSG62"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM267" identifier="COND43" background="-" text="IDLE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE" identifier="COND43" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM267"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM29" identifier="MSG61" text="s_codeTRUE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM32" identifier="MSG63" text="s_Go"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Go" identifier="MSG63"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM49" identifier="MSG64" text="s_Succes(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Succes(|{param1|=2|})" identifier="MSG64"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM46" identifier="COND44" background="-" text="WAIT_DOOR_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="47"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_DOOR_NUM" identifier="COND44" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM46"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=3|})" identifier="MSG65"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="53"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM5" identifier="MSG65" text="s_Num(|{param1|=3|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="53"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM21" identifier="MSG66" text="s_DoorNumPB(|{param1|=3|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="53"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM24" identifier="COND45" background="-" text="WAIT_CODE_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="53"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_NUM" identifier="COND45" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM24"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM5" identifier="MSG66" text="s_DoorNumPB(|{param1|=3|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="53"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM12" identifier="COND46" background="-" text="DR3LOCK"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="53"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="DR3LOCK" identifier="COND46" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM12"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=4|})" identifier="MSG67"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM25" identifier="MSG67" text="s_Num(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM26" identifier="MSG68" text="s_Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Wait" identifier="MSG68"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM28" identifier="MSG69" text="s_NumPB(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27" identifier="COND47" background="-" text="WAIT_CODE_VERIF"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_CODE_VERIF" identifier="COND47" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM224" identifier="MSG69" text="s_NumPB(|{param1|=4|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM244" identifier="MSG70" text="s_CodeFALSE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM245" identifier="COND48" background="-" text="IDLE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE" identifier="COND48" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pbackend.rdd*SYM245"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM30" identifier="MSG70" text="s_CodeFALSE"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM33" identifier="MSG71" text="s_Failed(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" text="s_Failed(|{param1|=0|})" identifier="MSG71"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM35" identifier="COND49" background="-" text="BLOCKED"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="55"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="BLOCKED" identifier="COND49" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM35"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Num(|{param1|=6|})" identifier="MSG72"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="56"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" text="s_Num(|{param1|=6|})" identifier="MSG72"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="56"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="RST" identifier="MSG73"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM19" identifier="MSG73" text="RST"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM20" identifier="COND50" background="-" text="IDLE_START"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="IDLE_START" identifier="COND50" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM20"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" text="s_Initialize" identifier="MSG74"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="61"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM3" identifier="MSG74" text="s_Initialize"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="61"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM4" identifier="COND51" background="-" text="WAIT_DOOR_NUM"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="61"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WAIT_DOOR_NUM" identifier="COND51" model_id="PragmaDevStudio:symbol*c:\users\pc\documents\studia_pw\semestr_5\ptsp\lab1\projekt_2\pfrontend.rdd*SYM4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE" scaleFactor="1.0"/>
+</MscDiagram>
